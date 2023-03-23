@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+}
+
+:root {
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --whiteC: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyanE: hsl(178, 100%, 50%)
+}
+
+
+body {
+    max-width: 1920px;
+    min-width: 375px;
+}
+
+main {
+    background-color: var(--very-dark-blue);
+    height: 937px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+p {
+    color: var(--soft-blue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+h1,
+em {
+    color: var(--whiteC);
+    font-style: normal;
+}
+
+h1:hover,
+em:hover {
+    color: var(--cyanE);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    width: 20%;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 20px hsl(214, 51%, 9%);
+}
+
+.equilibrium {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#desc {
+    margin: 10px 0px;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+}
+
+#eth {
+    color: hsl(178, 100%, 50%);
+    margin: 10px 0px;
+    margin-right: 45%;
+    margin-left: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: var(--line-color);
+    margin: 15px 0px;
+}
+
+#creator {
+    display: flex;
+    align-items: center;
+}
+
+#avatar {
+    width: 30px;
+    border: 1px solid var(--whiteC);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.fa-ethereum {
+    color: var(--cyanE);
+}
+
+a:hover {
+    color: red;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+
+    #eth {
+        margin-right: 27%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .card {
+        width: 40%;
+    }
+
+    #eth {
+        margin-right: 30%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .card {
+        width: 70%;
+    }
+
+    #eth {
+        margin-right: 30%;
+    }
+
+    h1,
+    h2,
+    p {
+        font-size: 15px;
+    }
+
+}
