@@ -1,1 +1,1 @@
-# Fronten-Mentor-NFT
+# Frontend-Mentor-NFT
